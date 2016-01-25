@@ -7,20 +7,20 @@ if (Meteor.isClient) {
     }
   });
 
-  Template.calculator.events({
-    "submit #js-calculator":function(event){
+  // Template.calculator.events({
+  //   "submit #js-calculator":function(event){
 
-      event.preventDefault();
+  //     event.preventDefault();
 
-      var first = event.target.first.value;
-      var second = event.target.second.value;
-      var method = event.target.method.value;
+  //     var first = event.target.first.value;
+  //     var second = event.target.second.value;
+  //     var method = event.target.method.value;
 
-      if(method == '+'){
-        Session.set('result', Number(first) + Number(second));
-      }
-    }
-  });
+  //     if(method == '+'){
+  //       Session.set('result', Number(first) + Number(second));
+  //     }
+  //   }
+  // });
 
   Template.calculator.events({
     "click #js-getresult-btn":function(event, template){
