@@ -1,0 +1,28 @@
+<head>
+    <title>calculator</title>
+</head>
+
+<body>
+    <h1>Calculator</h1> 
+
+    {{> calculator}}
+</body>
+<template name="calculator">
+    <!-- <form id="js-calculator">
+        <input type="text" name="first">
+        <input type="text" name="method">
+        <input type="text" name="second">
+        <span>=</span>
+        <input type="text" value="{{result}}">
+        <button>Get Result</button>
+    </form> -->
+
+
+        <input type="text" name="first" class="first">
+        <input type="text" name="method" class="method">
+        <input type="text" name="second" class="second">
+        <span>=</span>
+        <input type="text" value="{{result}}">
+        <button id="js-getresult-btn">Get Result</button>
+   
+</template>
